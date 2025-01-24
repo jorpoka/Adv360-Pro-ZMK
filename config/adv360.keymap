@@ -71,6 +71,7 @@
           , <&macro_tap     	&kp L>
           , <&macro_wait_time	500>
           , <&macro_tap			&kp C>
+          , <&macro_tap			&kp ESC>
           , <&macro_release	&kp LGUI>
           ;
       };
