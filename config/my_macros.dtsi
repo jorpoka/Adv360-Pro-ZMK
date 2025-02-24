@@ -1,0 +1,72 @@
+/**
+* Xcode - add symbolic documentation shortcut.
+*/
+xcode_sym_doc: xcode_sym_doc {
+compatible = "zmk,behavior-macro";
+label = "xcode_sym_doc";
+#binding-cells = <0>;
+bindings
+  = <&macro_press   &kp RGUI &kp LALT>
+  , <&macro_tap     &kp SLASH>
+  , <&macro_release &kp RGUI &kp LALT>
+  ;
+};
+
+/**
+* Xcode - find symbol in workspace shortcut.
+*/
+xcode_find_sym: xcode_find_sym {
+compatible = "zmk,behavior-macro";
+label = "xcode_find_sym";
+#binding-cells = <0>;
+bindings
+  = <&macro_press   &kp LSHIFT &kp LCTRL &kp LGUI>
+  , <&macro_tap     &kp F>
+  , <&macro_release &kp LSHIFT &kp LCTRL &kp LGUI>
+  ;
+};
+
+/**
+* Xcode - find call hierarchy.
+*/
+xcode_find_heir: xcode_find_heir {
+compatible = "zmk,behavior-macro";
+label = "xcode_find_heir";
+#binding-cells = <0>;
+bindings
+  = <&macro_press   &kp LSHIFT &kp LCTRL &kp LGUI>
+  , <&macro_tap     &kp H>
+  , <&macro_release &kp LSHIFT &kp LCTRL &kp LGUI>
+  ;
+};
+
+/**
+* Safari - select the location bar and copy.
+*/
+safari_cp_loc: safari_cp_loc {
+compatible = "zmk,behavior-macro";
+label = "safari_cp_loc";
+#binding-cells = <0>;
+bindings
+  = <&macro_press   	&kp LGUI>
+  , <&macro_tap     	&kp L>
+  , <&macro_wait_time	500>
+  , <&macro_tap			&kp C>
+  , <&macro_release	&kp LGUI>
+  , <&macro_tap			&kp ESC>
+  ;
+};
+
+/**
+* work - shortcut to trigger shortcut for open jira issue.
+*/
+work_open_issue: work_open_issue {
+compatible = "zmk,behavior-macro";
+label = "work_open_issue";
+#binding-cells = <0>;
+bindings
+  = <&macro_press	&kp LSHIFT &kp LGUI &kp RCTRL>
+  , <&macro_tap		&kp O>
+  , <&macro_release	&kp LSHIFT &kp LGUI &kp RCTRL>
+  ;
+};
