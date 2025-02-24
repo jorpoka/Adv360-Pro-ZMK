@@ -78,7 +78,7 @@
       >;
     };
     original {
-      display-name = "Original"
+      display-name = "Original";
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                                       &trans &trans &trans &trans &trans &trans &trans 
         &trans &trans &trans &trans &trans &trans &trans                                                       &trans &trans &trans &trans &trans &trans &trans
